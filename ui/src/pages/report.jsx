@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-import queryString from "query-string";
 import { Box, Text, Heading } from "@chakra-ui/react";
 import { Tabs } from "../components/report/Tabs";
 import { REPORT_TYPE, reportTypes } from "../constants/report";
 import { _get } from "../common/httpClient";
+import { useRouter } from "next/router";
 
 const REPORTS_URL = "/api/entity/reports";
 
@@ -55,9 +54,9 @@ const getReport = async (reportType, date, page = 1, fullReport = null) => {
   }
 };
 
-const ReportPage = () => {
-  const { search } = useLocation();
-  const { type: reportType, date } = queryString.parse(search);
+const Report = () => {
+  const router = useRouter();
+  const { type: reportType, date } = router.query;
 
   const [report, setReport] = useState(null);
   const [errorFetchData, setErrorFetchData] = useState(null);
@@ -135,4 +134,4 @@ const ReportPage = () => {
   );
 };
 
-export default ReportPage;
+export default Report;

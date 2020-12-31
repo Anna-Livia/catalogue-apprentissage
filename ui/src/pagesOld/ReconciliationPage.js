@@ -13,9 +13,9 @@ import {
   Tag,
   useToast,
 } from "@chakra-ui/react";
-import { Layout, Accordion as Item, Loading } from "./components";
+import { Layout, Accordion as Item, Loading } from "../components/reconciliation";
 
-import { _get } from "../../common/httpClient";
+import { _get } from "../common/httpClient";
 
 import { useQuery } from "react-query";
 

@@ -24,7 +24,7 @@ import {
 import Datatable from "./Datatable";
 import ModalAddEtablissement from "./addEtablissement";
 
-import { _post, _put } from "../../../common/httpClient";
+import { _post, _put } from "../../common/httpClient";
 
 import { useMutation } from "react-query";
 

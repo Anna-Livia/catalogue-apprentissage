@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
-import Layout from "./pages/Layout";
+import LoginPage from "./pagesOld/LoginPage";
+import Layout from "./pagesOld/Layout";
 import "tabler-react/dist/Tabler.css";
-import DashboardPage from "./pages/DashboardPage";
+import DashboardPage from "./pagesOld/DashboardPage";
 import useAuth from "./common/hooks/useAuth";
-import HomePage from "./pages/HomePage";
-import ResetPasswordPage from "./pages/password/ResetPasswordPage";
-import ForgottenPasswordPage from "./pages/password/ForgottenPasswordPage";
-import Users from "./pages/admin/Users";
-import PageReconciliation from "./pages/reconciliation";
-import ReportPage from "./pages/ReportPage";
-import NotFoundPage from "./pages/404";
+import HomePage from "./pagesOld/HomePage";
+import ResetPasswordPage from "./pagesOld/password/ResetPasswordPage";
+import ForgottenPasswordPage from "./pagesOld/password/ForgottenPasswordPage";
+import Users from "./pagesOld/admin/Users";
+import PageReconciliation from "./pagesOld/ReconciliationPage";
+import Report from "./pages/report";
+import NotFoundPage from "./pagesOld/404";
 
 import { QueryClient, QueryClientProvider } from "react-query";
 
@@ -51,7 +51,7 @@ export default () => {
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/reset-password" component={ResetPasswordPage} />
             <Route exact path="/forgotten-password" component={ForgottenPasswordPage} />
-            <Route exact path="/report" component={ReportPage} />
+            <Route exact path="/report" component={Report} />
             <Route exact path="/coverage" component={PageReconciliation} />
 
             <Route component={NotFoundPage} />

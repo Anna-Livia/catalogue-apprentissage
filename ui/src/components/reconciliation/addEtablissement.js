@@ -25,7 +25,7 @@ import {
   RadioGroup,
 } from "@chakra-ui/react";
 
-import { _post } from "../../../common/httpClient";
+import { _post } from "../../common/httpClient";
 
 export default function TransitionsModal({ isOpen, onClose, onSuccess }) {
   const [etablissement, setEtablissement] = React.useState();

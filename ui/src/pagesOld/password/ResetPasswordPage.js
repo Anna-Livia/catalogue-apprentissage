@@ -10,7 +10,7 @@ import decodeJWT from "../../common/utils/decodeJWT";
 import FormError from "../../common/components/FormError";
 import CenteredCol from "../../common/components/CenteredCol";
 
-import "./password.css";
+// import "./password.css";
 
 const validationSchema = Yup.object().shape({
   newPassword: Yup.string()

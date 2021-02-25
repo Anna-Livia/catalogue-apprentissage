@@ -13,12 +13,7 @@ const CardList = ({ data }) => {
   const niv = data.niveau.replace(/\D/g, "");
 
   return (
-    <Link
-      to={`/formation/${data._id}`}
-      className="list-card-formation"
-      style={{ textDecoration: "none" }}
-      target="_blank"
-    >
+    <Link to={`/formation/${data._id}`} className="list-card-formation" style={{ textDecoration: "none" }}>
       <div className="list-card-container">
         <div className="list-card-left">
           <h3>

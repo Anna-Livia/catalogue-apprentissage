@@ -86,7 +86,7 @@ const Layout = (props) => {
             showSearch={true}
             placeholder="Filtrer..."
             showFilter={true}
-            URLParams={false}
+            URLParams={true}
             loader="Chargement ..."
             defaultQuery={() => {
               return {

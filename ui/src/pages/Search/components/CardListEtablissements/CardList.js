@@ -41,7 +41,7 @@ const CardList = ({ data }) => {
   // };
 
   return (
-    <Link to={`/etablissement/${data._id}`} className="list-card" style={{ textDecoration: "none" }} target="_blank">
+    <Link to={`/etablissement/${data._id}`} className="list-card" style={{ textDecoration: "none" }}>
       <div className="list-card-container ">
         <div className="thumbnail">
           <div className="field grow-1" />

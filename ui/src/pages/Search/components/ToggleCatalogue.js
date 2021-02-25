@@ -46,6 +46,7 @@ const ToggleCatalogue = React.memo(({ filters, onChanged }) => {
       showFilter={false}
       showSearch={false}
       showCount={true}
+      URLParams={true}
       renderItem={(label, count) => (
         <>
           <span>

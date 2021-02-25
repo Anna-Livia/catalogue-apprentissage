@@ -227,6 +227,7 @@ export default ({ match }) => {
                         loader="Chargement des résultats.."
                         size={8}
                         pagination={true}
+                        URLParams={true}
                         showEndPage={true}
                         renderPagination={(paginationProp) => {
                           return <Pagination {...paginationProp} />;
